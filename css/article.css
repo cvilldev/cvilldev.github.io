@@ -1,0 +1,446 @@
+
+/* STYLE GENERAL */
+
+body
+	{
+		background: #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 80%;
+    }
+
+p
+	{
+		color: #000000;
+		/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+		font-weight: normal;
+		/*padding: 5px;*/
+		text-indent: 10px; 
+    }
+	
+blockquote 
+	{
+		background: #F8F8F8;
+		border: dotted 1px #D7D7D7;
+		padding: 5px 5px 5px 25px;
+}
+
+dl
+	{
+		color: #000000;
+		/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+		font-weight: normal;
+    }
+
+dt
+	{
+		color: #000000;
+		/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+		font-weight: bold;
+    }
+
+ul
+	{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+ol
+	{
+		color: #000000;
+		/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+		font-weight: normal;
+		list-style: none;
+    }
+	
+li 
+	{
+		text-decoration: none;
+	}
+
+h1
+	{
+		color: #222222;
+		font-weight: bold;
+		font-size: 130%;
+		/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+		font-variant: small-caps;
+    }
+
+h1 a:hover
+        {
+        color: #222222;
+        text-decoration: none;
+    }
+
+h2
+	{
+		color: #000000;
+		font-weight: bold;
+		font-size: 120%;
+		background-color: #EEEEEE;
+		padding: 2px;
+    }
+
+h2 a:hover
+        {
+        color: #000000;
+        text-decoration: none;
+    }
+
+h3
+	{
+		color: #8C8A85;
+		font-weight: bold;
+		font-size: 110%;
+		padding: 2px;
+		border-bottom: 1px solid #8C8A85;
+    }
+	
+h3 a:hover
+        {
+        color: #8C8A85;
+        text-decoration: none;
+    }
+
+h4
+	{
+		color: #222222;
+		font-weight: bold;
+		font-size: 100%;
+		padding: 2px;
+		border-bottom: 1px dashed #222222;
+    }
+
+h4 a:hover
+        {
+        color: #222222;
+        text-decoration: none;
+    }
+
+pre
+	{
+		font-size: 120%;
+    }
+
+tt
+	{
+		font-size: 120%;
+    }
+	
+code 
+	{
+		font-size: 100%;
+		margin : 4px 8px;
+		padding : 10px;
+		text-align : left;
+		display : block;
+		overflow : auto;
+		font : 500 1em/1.5em 'Lucida Console', 'courier new', monospace;
+		background: #F8F8F8;
+		border : 1px dashed #D7C3C3;
+	}	
+	
+kbd
+	{
+		font-size: 120%;
+    }
+
+
+/* Tableau */	
+	
+table
+	{
+		border-collapse: collapse ;
+		border-spacing : 3px;
+		border-style : solid;
+		border-color : blue;
+		border-width : 1px;
+	}	
+
+caption 
+	{
+		font-size: 90%;
+	}
+
+tbody 
+	{
+		background-color:#FFFFFF;
+	}
+
+thead, tfoot 
+	{
+		background-color:#D0E3FA;
+		font-size: 90%;
+	}
+
+td
+	{
+		/*font-family: Verdana, Arial, Helvetica, sans-serif;*/
+		font-weight: normal;
+		text-decoration: none;
+		font-size: 80%;
+		border-width : 1px;
+		border-style : dotted;
+		border-color : #CCCCCC;
+		padding : 8px;
+    }
+	
+/*td[colspan]:last-child
+	{
+		background-color : black;
+		color:white;
+		font-weight:bold;
+	}
+*/
+/*td[rowspan]
+	{
+		background-color : black;
+		color:white;
+		font-weight:bold;
+		background-color:#EFF6FF;
+	}
+*/
+td ul 
+	{
+		 list-style-type: circle;
+		 list-style-position: inside;
+		 padding: 10px 0 15px 20px; 
+		 /*margin-bottom:0;*/
+		/*list-style: none;*/	
+	}
+
+td li 
+	{
+		margin-top:5px;
+		/*text-decoration: none;*/
+		/*word-spacing : 4px;*/
+		line-height: 1.5;
+	}
+
+.col-label-1 {
+    text-align: center;
+	font-weight: bold; 
+	background-color : black;
+	color:white;
+}
+
+.col-label-2 {
+    text-align: center;
+	background-color : #99A09F;
+	color:white;
+	font-weight: bold;
+	
+}
+
+.cell-col-label {
+	color:black;
+	font-weight:bold;
+	text-align: center;
+}
+
+.cell-label {
+	font-weight:bold;
+}
+
+.row-label-1 {
+    padding-right: 4px; 
+    padding-left: 4px;
+}
+.row-label-2 {
+    padding-right: 4px; 
+    padding-left: 14px;
+}
+
+.pyjama-1 {
+    background-color: #EFF6FF;
+}
+.pyjama-2 {
+    background-color: #F0F8FF;
+   
+}
+
+/*
+TABLE.bilingual {
+width: 100%;
+border-style: none;
+border: 0px solid #666;
+background-color: #EEEEEE;
+padding: 2px;
+}
+
+TABLE.bilingual TD {
+vertical-align: top;
+padding: 15px;
+}
+
+TABLE.bilingual TD.fr {
+background-color: white;
+border-left: thick solid white;
+}
+
+TABLE.bilingual TD.en {
+width:45%;
+background-color: white;
+}
+
+div.scroll
+{
+overflow:scroll; 
+width:600px;
+height:600px;
+}
+
+div.inlineleft
+{
+float: left;
+display: inline;
+width:50%;
+height:auto;
+}
+
+div.inlineright
+{
+float: right;
+display: inline;
+width:50%;
+height:auto;
+}
+*/
+
+#langSelectors {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 3em;
+    border-bottom: 1px dotted #CCCCCC;
+    margin-bottom: 2em;
+   /* background-color: #c0c0c0;*/
+
+}
+
+.langSelectorLanguage {
+   /* background-color: #c0c0c0;*/
+   /*color: #808080;*/
+    cursor: pointer;
+	text-decoration: underline;
+	/*background-color: #EBEBEB;*/
+	}
+
+.langSelectorLanguageSelected {
+    /*color: #fff;*/
+	font-weight : bold;
+	
+}
+
+#lang1, #lang2, #lang3 {
+    /*font-weight: bold;
+    font-size: 0.8em;*/
+    padding: 8px 8px 5px 8px;
+	display: inline;
+}
+
+#lang1 {
+    margin-left: 80em;
+}
+
+
+div.lang_fr
+{
+float: left;
+display: inline;
+/*width:50%;*/
+height:auto;
+}
+
+div.lang_en
+{
+/*float: right;*/
+display: inline;
+/*width:50%;*/
+height:auto;
+}
+
+
+.inlineright
+{
+float: right;
+display: inline;
+/*width:50%;
+height:auto;*/
+}
+
+#headerContent
+	{
+		
+	}
+	
+#navContent 
+	{
+		clear: both;	
+		padding: 0;	margin: 0;
+		/*width: 920px;*/
+		height: 50px;
+	}
+	
+#navContent ul 
+	{
+		float: left;
+		list-style: none;	
+		margin: 0;
+		padding: 0 0 0 40px;			
+		height: 50px;	
+	}
+	
+#navContent ul li 
+	{
+		display: inline;
+		margin: 0; padding: 0;
+	}
+	
+#navContent ul li a 
+	{
+		display: block;
+		float: left;
+		width: auto;
+		margin: 0;
+		padding: 0 14px;
+		text-decoration: none;	
+		letter-spacing: -0.5px;
+		color: #333;
+	}
+
+#navContent ul li a:hover 
+	{
+		background : #EBEBEB;
+	}
+	
+#navContent ul li a:active 
+	{
+		color: #edf8c7;	
+	}
+
+#navContent ul li#current a 
+	{	
+		font-weight : bold;
+		text-decoration: underline;
+	}
+
+/* Table of Contents */
+#tocContent
+	{
+		
+	}
+	
+#divider-line 
+	{
+		border-top: 1px dotted #CCCCCC;
+		height: 2px;
+	}	
+
+#containerContent
+	{
+		width: auto;
+	}
+

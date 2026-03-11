@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+  <title>index</title>
+  <link rel="stylesheet" href="css/site.css" type="text/css">
+  <link rel="stylesheet" href="css/article.css" type="text/css">
+  <script src="js/hideShow.js" language="JavaScript"></script> 
+</head>
+<body>
+
+<div id="containerPage">
+
+<!-- ============ HEADER SECTION ============== -->
+ <div id="headerPage">
+  
+  <div id="topHeaderNav">
+    <ul>
+      <li class="left"><a href="index.html">Home</a></li>
+      <li class="left"><a href="about.html">About Us</a></li>
+	  <li class="left"><a href="#">Search</a></li>
+      <li class="left"><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+  
+  <div id="mastHead">
+   <div id="logo"></div>
+   <div id="title">Web Site Designer</div>
+   <div id="search"> 
+		<input onfocus="" style="width:150px;color:#808080;font-style:italic;margin:0;" type="text" name="as_q" size="20" value="Search ..." />
+		<input type="submit" style="margin:0;" value="Search" title="Search" />
+	</div>
+  </div>
+  
+  
+ </div>
+<!-- ============ NAVIGATION BAR SECTION ============== -->
+ <!-- Top Navigation Bar --> 
+ <div id="topNav">
+	<ul>
+		<li><a href="#" onclick = "ShowOnlyOneDiv('category','webdesign');">Web Design</a></li>
+		<li><a href="#" onclick = "ShowOnlyOneDiv('category','htmlexamples');">HTML Examples</a></li>
+	<!--	<li><a href="#" onclick = "clientSideInclude('includeone', 'content/links/links.html');">Links</a></li>-->
+		<li><a href="#" onclick = "changeTemplate('content/links/links.html');">Links</a>
+			<ul>
+				<li><a href="#" onclick = "changeTemplate('content/links/links.html');">Links 1</a></li>
+				<li><a href="">Links 2</a></li>
+			</ul>
+		</li>
+	</ul>
+ </div>
+ 
+ <!-- ============ LEFT COLUMN (MENU) ============== -->
+ <!-- Left Navigation Column -->
+ <div id="leftNav" >
+  <h1>Table of Content</h1>
+	<div id="webdesign" class="category" style="display:none;" >
+		<ol class="niveau1">
+			<li><a href="content/webdesign/definition.html" target="iframe_a">Definition</a><br></li>
+		</ol>
+	</div>
+	<div id="htmlexamples" class="category" style="display:none;">
+		<ol class="niveau1">
+			<li>Tables
+				<ol class="niveau2">
+				  <li><a href="content/htmlexamples/tables/static-tables.html" target="iframe_a">Static Tables</a><br></li>
+			</li>
+		</ol>
+	</div>
+</div>
+
+<!-- ============ MIDDLE COLUMN (CONTENT) ============== -->
+<div id="content">
+	<div id="headerContent">
+	
+	    <span id="breadcrumb">
+		
+		</span>
+	
+		<h1>Content</h1>
+	</div>
+
+	<div id="divider-line"></div>
+	
+	<div id="containerContent" style="display:block;">
+		<iframe src="content/welcome.html" id="myIFrameElemId" name="iframe_a" frameborder="0" width="90%" height="90%"></iframe>	
+	</div>	
+
+<span id="includeone"></span>
+
+<div id="mytemplate"></div>
+
+<!-- other alternative, using object -->
+		<!-- <object type="text/html" width="90%" height="90%" data="content/links/links.html"></object>-->
+		<!--<link rel="import" href="content/links/links.html">-->
+</div>
+
+<!-- Right Navigation Column - Optional-->
+<div id="rightNav">
+<h1>Useful links</h1>
+	<ul>
+		This column is optional, can contains:
+		<li>Advertisements</li>
+		<li>Latest news</li>
+		<li>external links</i>
+	</ul>
+</div> 
+
+
+<!-- ============ FOOTER SECTION ============== -->
+
+<!-- optional -->
+<div id="footerPage"> 
+
+
+	<div id="bottomNav">
+		<ul>
+				<li class="left"><a href="">Home</a></li>
+				<li class="left"><a href="">FAQ</a></li>
+				<li class="left"><a href="">Terms & Conditions</a></li>
+				<li class="left"><a href="">Privacy Policy</a></li>
+				<li class="left"><a href="">Site Map</a></li>
+		</ul>
+	</div>
+
+	<p><a href="?edit">Edit</a> | <a href="?delete">Delete</a> | <a href="?Rename">Rename</a></p>
+	<p><small>© copyright 1998 Exampland Emperor</small></p>
+   
+	<div id="copyrightNotice">
+	2012 <strong>Your Enterprise</strong> | Designed by Charles Villepreux
+	</div>  
+
+</div>
+ 
+</div>
+
+</body>
+</html> 
